@@ -13,4 +13,4 @@ def test_letter_grade_F():
 ])
 
 def test_letter_grade(score, expected):
-    asset letter_grade(score) == expected
+    assert letter_grade(score) == expected
