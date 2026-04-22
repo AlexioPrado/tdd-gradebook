@@ -20,6 +20,10 @@ def is_passing(score):
     return score >= 60
 
 def average(scores):
+    if len(scores) == 0:
+        raises ValueError("Scores list cannot be empty")
+    
+
     return round(sum(scores) / len(scores), 2)
 
 def curved_score(score, bonus):
