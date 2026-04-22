@@ -21,7 +21,7 @@ def is_passing(score):
 
 def average(scores):
     if len(scores) == 0:
-        raises ValueError("Scores list cannot be empty")
+        raise ValueError("Scores list cannot be empty")
     
 
     return round(sum(scores) / len(scores), 2)
