@@ -29,3 +29,7 @@ def test_is_passing_true():
 
 def test_is_passing_false():
     assert is_passing(45) == False
+
+def test_is_passing_invalid_type():
+    with pytest.raises(TypeError):
+        is_passing("passing")
