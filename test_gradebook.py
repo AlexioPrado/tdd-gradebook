@@ -1,5 +1,5 @@
 import pytest
-from gradebook import letter_grade, is_passing, average
+from gradebook import letter_grade, is_passing, average, curved_score
 
 
 # letter_grade testing
@@ -52,3 +52,6 @@ def test_average_bad_items():
         average([80, "ninety", 70])
 
 # curved_score testing
+
+def test_curved_score_basic():
+    assert curved_score(80, 5) == 85
