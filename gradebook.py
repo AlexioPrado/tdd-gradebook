@@ -31,7 +31,7 @@ def average(scores):
 
 def curved_score(score, bonus):
     if not isinstance(score, (int, float)) or not isinstance(bonus, (int, float)):
-        raises TypeError("Score or Bonus must be int or float")
+        raise TypeError("Score or Bonus must be int or float")
     if bonus < 0:
         raise ValueError("Bonus must be a positive")
     return min(score + bonus, 100) 
