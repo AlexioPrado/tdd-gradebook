@@ -21,7 +21,7 @@ def is_passing(score):
 
 def average(scores):
     if not isinstance(scores, list):
-        rause TypeError("scores must be a list")
+        raise TypeError("scores must be a list")
     if len(scores) == 0:
         raise ValueError("Scores list cannot be empty")
     return round(sum(scores) / len(scores), 2)
